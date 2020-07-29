@@ -1,0 +1,366 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+a{
+    text-decoration:none;
+}
+.container{
+    max-width: 940px;
+    margin: 30px auto 60px;
+    font-family: 微軟正黑體;
+    font-weight: bolder;
+}
+.header{
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    width: 219px;
+}
+.menu{
+    display: flex;
+    width: 319px;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu li a{
+    font-size: 16px;
+    color: #3F5D45;
+}
+.menu li a:hover{
+    text-decoration: underline;
+}
+.banner{
+    margin-bottom: 60px;
+}
+.main{
+    display: flex;
+    justify-content: space-between;
+}
+.category{
+    width: 300px;
+    font-size: 24px;
+    text-align: center;
+}
+.category h2{
+    background: #3F5D45;
+    color: white;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+.category li{
+    border: 1px solid #EAF0ED;
+}
+.category li a{
+    display: block;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    color: #3F5D45;
+}
+.category li a:hover{
+    background: #EAF0ED;
+}
+.category .click{
+    background: #EAF0ED;
+}
+.product{
+    width: 620px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+}
+.product .featured{
+    position: absolute;
+    top: 0;
+    left: 20px;
+}
+.product .featured p{
+    writing-mode: vertical-rl;
+    padding: 10px;
+    font-size: 16px;
+    line-height: 20px;
+    background: #3F5D45;
+    color: white;
+}
+.product .favorite{
+    position: absolute;
+    top: 19px;
+    right: 22px;
+}
+.product .favorite a{
+    background: none;
+    padding: 0px;
+}
+.product .favorite a:hover{
+    background: none;
+}
+.product li{
+    margin-bottom: 20px;
+    position: relative;
+}
+.NamePrice{
+    display: flex;
+    justify-content: space-between;
+    border-right: 1px solid #EAF0ED;
+    border-left: 1px solid #EAF0ED;
+}
+.product li h3{
+    font-size: 20px;
+    padding-left: 33px;
+    padding-right: 33px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+}
+.product li span{
+    font-size: 20px;
+    padding-left: 25px;
+    padding-right: 20px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    border-left: 1px solid #EAF0ED;
+}
+.product li a{
+    display: block;
+    font-size: 24px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    background: #EAF0ED;
+    color: #3F5D45;
+}
+.product li a:hover{
+    background: #3F5D45;
+    color: #EAF0ED;
+}
+.page{
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+    text-align: center;
+}
+.page a{
+    display: block;
+    width: 60px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    border: 1px solid #EAF0ED;
+    color: #3F5D45;
+}
+.page a:hover{
+    background: #EAF0ED;
+}
+.page .click{
+    background: #3F5D45;
+    color: white;
+}
+/*頁尾*/
+.footer{
+    max-width: 1024px;
+    margin: 0 auto;
+}
+.mail{
+    padding: 30px 12%;
+    background: #3F5D45;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.mail-left{
+    display: flex;
+    align-items: center;
+}
+.mail-left img{
+    width: 40px;
+    padding-right: 20px;
+}
+.mail-left h2{
+    font-size: 24px;
+    color: #EAF0ED;
+    font-family: 微軟正黑體;
+}
+.mail-right{
+    background: #EAF0ED;
+    width: 380px;
+    display: flex;
+    align-items: center;
+}
+.mail-right img{
+    width: 24px;
+    height: 24px;
+    padding: 16px 20px;
+}
+.mail-right input{
+    background: #EAF0ED;
+    border: none;
+    width: 220px;
+    padding: 16px ;
+}
+.mail-right .btn{
+    width: 64px;
+    height: 56px;
+    background-image: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/arrow_forward-24px.png?raw=true);
+    background-color: #FFE180;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    display: block;
+    cursor: pointer;
+}
+.contact{
+    padding: 30px 12%;
+    background: #EAF0ED;
+    color: #3F5D45;
+}
+.contact-1st{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.content li{
+    font-size: 16px;
+    font-family: 微軟正黑體;
+    line-height: 24px;
+}
+.slogan h2{
+    writing-mode: vertical-rl;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 30px;
+    letter-spacing: 6px;
+}
+.contact-2nd{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.contact-2nd .icon{
+    display: flex;
+    justify-content: space-between;
+}
+.contact-2nd .icon li{
+    width: 30px;
+    margin-right: 8px;
+}
+.contact-2nd p{
+    font-size: 16px;
+}
+/*hide*/
+.dehaze,.hide-logo,.shopping_cart{
+    display: none;
+}
+
+/*RWD*/
+@media(max-width: 880px){
+    .mail-left{
+        margin-bottom: 30px;
+    }
+}
+@media(max-width: 768px){
+    .header{
+        margin: 33px;
+    }
+    .dehaze,.hide-logo,.shopping_cart{
+        display: block;
+    }
+    .hide-logo{
+        width: 30%;
+    }
+    .logo,.menu{
+        display: none;
+    }
+    .banner{
+        margin-bottom: 0px;
+    }
+    .main,.product{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .category{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .page{
+        justify-content: center;
+    }
+    .slogan{
+        display: none;
+    }
+    .mail{
+        justify-content: center;
+    }
+    .contact-1st .content img{
+        margin-bottom: 40px;
+    }
+    .contact-2nd{
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+
+    }
+    .contact-2nd .icon{
+        margin-bottom: 23px;
+    }
+}
