@@ -88,9 +88,10 @@ a{
 .main{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .category{
-    width: 300px;
+    width: 32%;
     font-size: 24px;
     text-align: center;
 }
@@ -116,7 +117,7 @@ a{
     background: #EAF0ED;
 }
 .product{
-    width: 620px;
+    width: 66%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -208,7 +209,6 @@ a{
 }
 /*頁尾*/
 .footer{
-    max-width: 1024px;
     margin: 0 auto;
 }
 .mail{
@@ -310,11 +310,17 @@ a{
 
 /*RWD*/
 @media(max-width: 880px){
+    .mail{
+        justify-content: center;
+    }
     .mail-left{
         margin-bottom: 30px;
     }
 }
 @media(max-width: 768px){
+    .container{
+        max-width: 768px;
+    }
     .header{
         margin: 33px;
     }
@@ -330,12 +336,14 @@ a{
     .banner{
         margin-bottom: 0px;
     }
-    .main,.product{
+    .main{
         width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
         justify-content: center;
+        align-items: center;
+    }
+    .product{
+        width: 100%;
+        justify-content: space-around;
         align-items: center;
     }
     .category{
@@ -347,9 +355,6 @@ a{
     }
     .slogan{
         display: none;
-    }
-    .mail{
-        justify-content: center;
     }
     .contact-1st .content img{
         margin-bottom: 40px;
@@ -363,4 +368,10 @@ a{
     .contact-2nd .icon{
         margin-bottom: 23px;
     }
+}
+@media(max-width: 375px){
+    .container{
+        max-width: 375px;
+    }
+
 }
